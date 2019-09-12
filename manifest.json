@@ -1,12 +1,12 @@
 {
     //manifest spec: http://developer.chrome.com/extensions/manifest.html
     //required
-    "name": "Chrome Extension Template",
-    "version": "1.0",
+    "name": "Wallpaper Rotation",
+    "version": "0.1.0",
     "manifest_version": 2,
 
     //recommended
-    "description": "Chrome extension description written here.",
+    "description": "Allows you to rotate your wallpaper.",
     "icons": {
         "19": "images/icon_19.png",
         "38": "images/icon_38.png",
@@ -15,15 +15,19 @@
 
     //required
     "browser_action": {
-        "default_title": "browser_action: default_title",
+        "default_title": "",
         "default_icon": {
             "19": "images/icon_19.png",
             "38": "images/icon_38.png"
         },
         "default_popup": "html/main.html"
     },
+    
+    "permissions": [
+        "wallpaper"
+    ]
 
     //additional
     "options_page": "html/options.html",
-    "homepage_url": "http://yourdomainhere.com/"
+    "homepage_url": "http://khuxkm.tilde.team/wallpaper-rotator/"
 }
